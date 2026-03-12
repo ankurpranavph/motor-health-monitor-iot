@@ -1,26 +1,13 @@
-from firebase_config import db
+from firebase_admin import db
+from firebase_config import *
 
-def get_readings():
-    docs = db.collection("machines").document("motor_1") \
-             .collection("readings").order_by("timestamp").stream()
-    
-    readings = []
-    for doc in docs:
-        readings.append(doc.to_dict())
-    
-    return readings
+ref  = db.reference("machines/motor_1/readings")
+data = ref.order_by_key().limit_to_last(3).get()
 
-data = get_readings()
-for row in data:
-    print(row)
-```
-
----
-
-## ✅ Your folder should now look like this:
-```
-motor-monitor/
-├── serviceAccountKey.json
-├── firebase_config.py
-├── send_data.py
-└── read_data.py
+if data:
+    for key, value in data.items():
+        print(f"Key: {key}")
+        print(f"Value: {value}")
+        print("---")
+else:
+    print("No data!")
