@@ -1,0 +1,23 @@
+[33mcommit cda845e9ce50ea990adb5e8535506daee55403e7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: ankurpranavph <ankurpranavph@gmail.com>
+Date:   Sat Mar 14 13:19:39 2026 +0530
+
+    Initial commit - Motor Health Monitoring System
+
+[33mcommit 4b4345e2ad2978f501df292e0ef42231a22558c8[m
+Author: ankurpranavph <ankurpranavph@gmail.com>
+Date:   Fri Mar 13 11:49:06 2026 +0530
+
+    Updated dashboard, graphs, alerts and ML prediction
+
+[33mcommit 8e10e87bc8a0c4fde26f3a27562ea13ee6d4b553[m
+Author: ankurpranavph <ankurpranavph@gmail.com>
+Date:   Thu Mar 12 22:43:48 2026 +0530
+
+    Initial commit - motor health monitoring project
+
+[33mcommit c699cb1d4645bd02c56e370261701d9b702ce739[m
+Author: ankurpranavph <ankurpranavph@gmail.com>
+Date:   Thu Mar 12 13:28:37 2026 +0530
+
+    initial commit - motor monitor dashboard
